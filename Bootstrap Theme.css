@@ -3705,7 +3705,7 @@ a.close.disabled {
   line-break: auto;
   font-size: 0.875rem;
   word-wrap: break-word;
-  background-color: #3e4d59;
+  background-color: #1E2B37;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0.3rem; }
@@ -3944,7 +3944,7 @@ a.close.disabled {
   .carousel-indicators .active {
     opacity: 1; }
 
-.carousel-caption {
+/* .carousel-caption {
   position: absolute;
   right: 15%;
   bottom: 20px;
@@ -3953,7 +3953,17 @@ a.close.disabled {
   padding-top: 20px;
   padding-bottom: 20px;
   color: #eceeec;
-  text-align: center; }
+  text-align: center; } */
+
+  .carousel-caption {
+    position: relative;
+    padding-top: 35px;
+    padding-bottom: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+    left: 0;
+    top: 1;
+}
 
 @keyframes spinner-border {
   to {
