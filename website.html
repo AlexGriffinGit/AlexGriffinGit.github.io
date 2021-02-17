@@ -1,37 +1,190 @@
 <!DOCTYPE html>
 <html lang="en-UK">
+
 <head>
-<title>This Website</title>
- <link rel="stylesheet" href="style.css">
- 
-<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
- 
-<link rel="icon" type="image/webp" sizes="32x32" href="/favicon-32x32.webp">
-<link rel="icon" type="image/webp" sizes="16x16" href="/favicon-16x16.webp">
-<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
- 
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Alex Griffins Portfolio - This Portfolio</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="Bootstrap Theme.css">
 </head>
+
 <body>
-
-<h1>Alex Griffin</h1>
-<h3>This Website</h3>
-<ul>
-  <li><a href="index.html">Home</a></li>
-  <li><a href="about.html">About Me</a></li>
-  <li><a href="contact.html">Contact Me</a></li>
-  <li><a href="cv.html">View My CV</a></li>
-</ul>
- 
- 
- <p>
-I created this website after teaching myself basic HTML and CSS, I've still got a lot to learn and plan on expanding
-  and streamlining this website once I'm happy with my other projects progress.
-<br>
-<br>
-The repository and code for this website can be found on my Github page  
-<a href="https://github.com/AlexGriffinGit/Portfolio" class="externalLinks">here</a>
-</p>
-
+  <nav id="mainNavBar" class="navbar sticky-top navbar-expand-sm navbar-dark bg-dark">
+    <!-- brand-->
+    <a class="navbar-brand text-light" href="index.html#welcome">Alex Griffin</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown active px-4">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+            Projects
+          </a>
+          <div class="dropdown-menu bg-dark">
+            <a class="dropdown-item text-light bg-dark" href="chillpill.html">Chill Pill</a>
+            <a class="dropdown-item text-light bg-dark" href="projectplanner.html">Entity Framework Project Planner</a>
+            <a class="dropdown-item text-light bg-dark" href="rockpaperscissors.html">WPF Rock Paper Scissors</a>
+            <a class="dropdown-item text-light bg-dark" href="diepoor.html">We All Die Poor</a>
+            <a class="dropdown-item text-light bg-dark" href="dwelling.html">Dwellings</a>
+            <a class="dropdown-item text-light bg-dark" href="crowdsim.html">Crowd Simulation App</a>
+            <a class="dropdown-item text-light bg-dark" href="odbarengine.html">ODBAR Engine</a>
+            <a class="dropdown-item text-light bg-dark" href="box.html">Box</a>
+            <a class="dropdown-item text-light bg-dark" href="website.html">This Portfolio</a>
+            <a class="dropdown-item disabled text-light bg-dark" href="">Fodder (In Development)</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item text-light bg-dark" href="index.html#projects">Projects</a>
+          </div>
+        </li>
+        <li class="nav-item px-4">
+          <a class="nav-link" href="index.html#about">About Me</a>
+        </li>
+        <li class="nav-item px-4">
+          <a class="nav-link" href="index.html#contact">Contact Me</a>
+        </li>
+        <li class="nav-item px-4">
+          <a class="nav-link" href="index.html#cv">View My CV</a>
+        </li>
+      </ul>
+  </nav>
 </body>
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="index.html#welcome">Projects Overview</a></li>
+    <li class="breadcrumb-item active" aria-current="page">This Portfolio</li>
+  </ol>
+</nav>
+
+<div id="websiteCarousel" class="carousel slide" data-ride="false" data-interval="false">
+  <h1 id="box" class="display-2" style="text-align: center;">This Portfolio</h1>
+  <br>
+  <ol class="carousel-indicators">
+    <li data-target="#websiteCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#websiteCarousel" data-slide-to="1"></li>
+    <li data-target="#websiteCarousel" data-slide-to="2"></li>
+    <li data-target="#websiteCarousel" data-slide-to="3"></li>
+    <li data-target="#websiteCarousel" data-slide-to="4"></li>
+    <li data-target="#websiteCarousel" data-slide-to="5"></li>
+    <li data-target="#websiteCarousel" data-slide-to="6"></li>
+    <li data-target="#websiteCarousel" data-slide-to="7"></li>
+    <li data-target="#websiteCarousel" data-slide-to="8"></li>
+    <li data-target="#websiteCarousel" data-slide-to="9"></li>
+    <li data-target="#websiteCarousel" data-slide-to="10"></li>
+    <li data-target="#websiteCarousel" data-slide-to="11"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="Images/Pages/Website/Projects.webp" class="d-block mx-auto img-fluid" alt="Projects Part Of The Current Home Page">
+      <div class="carousel-caption">
+        <h4>Projects part of the current home page</h4>
+      </div>
+    </div>
+    <div class="carousel-item" style="background-size: cover;">
+      <img src="Images/Pages/Website/AboutMe.webp" class="d-block mx-auto img-fluid"
+        alt="About Me Part Of The Current Home Page">
+      <div class="carousel-caption">
+        <h4>About me section of the current home page</h4>
+      </div>
+    </div>
+    <div class="carousel-item" style="background-size: cover;">
+      <img src="Images/Pages/Website/ContactMe.webp" class="d-block mx-auto img-fluid"
+        alt="Contact Me Part Of The Current Home Page">
+      <div class="carousel-caption">
+        <h4>Contact me section of the current home page</h4>
+      </div>
+    </div>
+    <div class="carousel-item" style="background-size: cover;">
+      <img src="Images/Pages/Website/CV.webp" class="d-block mx-auto img-fluid"
+        alt="CV On The Current Home Page">
+      <div class="carousel-caption">
+        <h4>CV on the current home page</h4>
+      </div>
+    </div>
+    <div class="carousel-item" style="background-size: cover;">
+      <img src="Images/Pages/Website/Project1.webp" class="d-block mx-auto img-fluid"
+        alt="Image Gallery Of A Listed Project">
+      <div class="carousel-caption">
+        <h4>Image gallery of a project on the current iteration of my portfolio</h4>
+      </div>
+    </div>
+    <div class="carousel-item" style="background-size: cover;">
+      <img src="Images/Pages/Website/Project2.webp" class="d-block mx-auto img-fluid"
+        alt="Information Of A Listed Project">
+      <div class="carousel-caption">
+        <h4>Information for a project on the current iteration of my portfolio</h4>
+      </div>
+    </div>
+    <div class="carousel-item" style="background-size: cover;">
+      <img src="Images/Pages/Website/OldIndex.webp" class="d-block mx-auto img-fluid"
+        alt="Project List On The Old Portfolio Design">
+      <div class="carousel-caption">
+        <h4>Project list on the older portfolio design</h4>
+      </div>
+    </div>
+    <div class="carousel-item" style="background-size: cover;">
+      <img src="Images/Pages/Website/OldIndexExpanded.webp" class="d-block mx-auto img-fluid"
+        alt="An Expanded Project Entry On The Old Portfolio Design">
+      <div class="carousel-caption">
+        <h4>A project listing after being expanded from the older portfolio design</h4>
+      </div>
+    </div>
+    <div class="carousel-item" style="background-size: cover;">
+      <img src="Images/Pages/Website/OldAboutMe.webp" class="d-block mx-auto img-fluid"
+        alt="About Me Section From The Old Portfolio Design">
+      <div class="carousel-caption">
+        <h4>The about me section from the old portfolio design</h4>
+      </div>
+    </div>
+    <div class="carousel-item" style="background-size: cover;">
+      <img src="Images/Pages/Website/OldContactMe.webp" class="d-block mx-auto img-fluid"
+        alt="Contact Me Section From The Old Portfolio Design">
+      <div class="carousel-caption">
+        <h4>The contact me page from the previous portfolio design</h4>
+      </div>
+    </div>
+    <div class="carousel-item" style="background-size: cover;">
+      <img src="Images/Pages/Website/OldCV.webp" class="d-block mx-auto img-fluid"
+        alt="CV Section From The Old Portfolio Design">
+      <div class="carousel-caption">
+        <h4>The CV page from the older portfolio design</h4>
+      </div>
+    </div>
+    <div class="carousel-item" style="background-size: cover;">
+      <img src="Images/Pages/Website/OldProject.webp" class="d-block mx-auto img-fluid"
+        alt="The Same Project Page The Old Portfolio Design">
+      <div class="carousel-caption">
+        <h4>The Same projects page from the old portfolio design</h4>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#websiteCarousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#websiteCarousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<div class="jumbotron">
+  <h1 id="about" class="display-2">This Portfolio</h1>
+  <p class="lead">
+    This website
+  </p>
+  <p>
+    Description
+  </p>
+</div>
+
 </html>
+
+<script src="https://cdn.jsdelivr.net/npm/bs-custom-file-input/dist/bs-custom-file-input.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+  integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+  integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
