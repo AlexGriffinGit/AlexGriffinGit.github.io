@@ -1,89 +1,146 @@
-<!DOCTYPE html>
-<html lang="en-UK">
 <head>
-<title>Dwellings</title>
- <link rel="stylesheet" href="style.css">
- 
-<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
- 
-<link rel="icon" type="image/webp" sizes="32x32" href="/favicon-32x32.webp">
-<link rel="icon" type="image/webp" sizes="16x16" href="/favicon-16x16.webp">
-<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Alex Griffins Portfolio - Dwellings</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="Bootstrap Theme.css">
 </head>
+
 <body>
+  <nav id="mainNavBar" class="navbar sticky-top navbar-expand-sm navbar-dark bg-dark">
+    <!-- brand-->
+    <a class="navbar-brand text-light" href="index.html#welcome">Alex Griffin</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown active px-4">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+            Projects
+          </a>
+          <div class="dropdown-menu bg-dark">
+            <a class="dropdown-item text-light bg-dark" href="chillpill.html">Chill Pill</a>
+            <a class="dropdown-item text-light bg-dark" href="projectplanner.html">Entity Framework Project Planner</a>
+            <a class="dropdown-item text-light bg-dark" href="rockpaperscissors.html">WPF Rock Paper Scissors</a>
+            <a class="dropdown-item text-light bg-dark" href="diepoor.html">We All Die Poor</a>
+            <a class="dropdown-item text-light bg-dark" href="dwelling.html">Dwellings</a>
+            <a class="dropdown-item text-light bg-dark" href="crowdsim.html">Crowd Simulation App</a>
+            <a class="dropdown-item text-light bg-dark" href="odbarengine.html">ODBAR Engine</a>
+            <a class="dropdown-item text-light bg-dark" href="box.html">Box</a>
+            <a class="dropdown-item text-light bg-dark" href="website.html">This Portfolio</a>
+            <a class="dropdown-item disabled text-light bg-dark" href="">Fodder (In Development)</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item text-light bg-dark" href="index.html#projects">Projects</a>
+          </div>
+        </li>
+        <li class="nav-item px-4">
+          <a class="nav-link" href="#about">About Me</a>
+        </li>
+        <li class="nav-item px-4">
+          <a class="nav-link" href="#contact">Contact Me</a>
+        </li>
+        <li class="nav-item px-4">
+          <a class="nav-link" href="#cv">View My CV</a>
+        </li>
+      </ul>
+  </nav>
+</body>
 
-<h1>Alex Griffin</h1>
-<h3>Dwellings</h3>
-<ul>
-  <li><a href="index.html">Home</a></li>
-  <li><a href="about.html">About Me</a></li>
-  <li><a href="contact.html">Contact Me</a></li>
-  <li><a href="cv.html">View My CV</a></li>
-</ul>
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="index.html#welcome">Projects Overview</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Dwellings</li>
+  </ol>
+</nav>
  
- <!-- The four columns -->
-<div class="row">
-  <div class="column">
-    <img src="Images/Pages/Dwellings/DwellingsMenu.webp" alt="Menu screen of Dwellings" style="width:80%" onclick="myFunction(this);">
+<div id="dwellingsCarousel" class="carousel slide" data-ride="carousel">
+  <h1 id="dwellings" class="display-2" style="text-align: center;">Dwellings</h1>
+  <br>
+  <ol class="carousel-indicators">
+    <li data-target="#dwellingsCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#dwellingsCarousel" data-slide-to="1"></li>
+    <li data-target="#dwellingsCarousel" data-slide-to="2"></li>
+    <li data-target="#dwellingsCarousel" data-slide-to="3"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="Images/Pages/Dwellings/DwellingsMenu.webp" class="d-block mx-auto" alt="Menu screen of Dwellings"
+        style="max-height: 800px; max-width: 1200px;">
+      <div class="carousel-caption d-none d-md-block">
+        <h4>Dwellings menu screen</h4>
+      </div>
+    </div>
+    <div class="carousel-item" style="background-size: cover;">
+      <img src="Images/Pages/Dwellings/DwellingOptions.webp" class="d-block mx-auto" alt="Option screen of Dwellings"
+        style="max-height: 800px; max-width: 1200px;">
+      <div class="carousel-caption d-none d-md-block">
+        <h4>Dwellings options</h4>
+      </div>
+    </div>
+    <div class="carousel-item" style="background-size: cover;">
+      <img src="Images/Pages/Dwellings/DwellingStats.webp" class="d-block mx-auto" alt="Stats page of Dwellings"
+        style="max-height: 800px; max-width: 1200px;">
+      <div class="carousel-caption d-none d-md-block">
+        <h4>Dwellings stats</h4>
+      </div>
+    </div>
+    <div class="carousel-item" style="background-size: cover;">
+      <img src="Images/Pages/Dwellings/DwellingsGame.webp" class="d-block mx-auto" alt="Dwellings game screen"
+        style="max-height: 800px; max-width: 1200px;">
+      <div class="carousel-caption d-none d-md-block">
+        <h4>Dwellings gameplay</h4>
+      </div>
+    </div>
   </div>
-  <div class="column">
-    <img src="Images/Pages/Dwellings/DwellingOptions.webp" alt="Option screen of Dwellings" style="width:80%" onclick="myFunction(this);">
-  </div>
-  <div class="column">
-    <img src="Images/Pages/Dwellings/DwellingStats.webp" alt="Stats page of Dwellings" style="width:80%" onclick="myFunction(this);">
-  </div>
-  <div class="column">
-    <img src="Images/Pages/Dwellings/DwellingsGame.webp" alt="Dwellings game screen" style="width:80%" onclick="myFunction(this);">
-  </div>
+  <a class="carousel-control-prev" href="#dwellingsCarousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#dwellingsCarousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
 </div>
 
-<div class="container">
-  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-  <img id="expandedImg" style="width:70%">
-  <div id="imgtext"></div>
-</div>
-
- <p>
-Dwellings is a needs simulator revolving around surviving as someone who is living rough. Dwellings was conceived and created during the Global Game Jam 2019 at Staffordshire University by me and 4 of my friends. The theme for the game jam was <b>What Home Means To You</b>, our team took this in a different direction and focused on the hardships of people who are not so fortunate and are without a home. The game jam took place from January 25th to January 27th. 
+<div class="jumbotron">
+  <h1 id="about" class="display-2">Dwellings</h1>
+  <p class="lead">
+    Dwellings is a needs simulator revolving around surviving as someone who is living rough. Dwellings was conceived and created during the Global Game Jam 2019 at Staffordshire University by me and 4 of my friends.
+  </p>
+  <p>
+    The theme for the game jam was <b>What Home Means To You</b>, our team took this in a different direction and focused on the hardships of people who are not so fortunate and are without a home. The game jam took place from January 25th to January 27th. 
 <br>
 <br>
 We came up with 4 different factors or needs that needed to be manged, these were hygiene, temperature, hunger and thirst.
   These all fed into an overall needs bar. There are several actions that the player could take to earn money to afford upgrades and 
   necessities.
+  <br>
 These purchases would minimise or reset the progress of the needs bars and the player would have to strategically pick the resource
   that was needed at that specific point in time.
+  <br>
 The player would also level up through the course of the game and would gain access to more expensive resources which would 
   benefit the player more.
+  <br>
 The player would lose if they did not keep on top of all of the needs.
   
 <br>
 <br>
-  
-If you'd like to know more about this project you can contact me
-<a href="contact.html" class="externalLinks">here</a>
-<br>
 The project can be found on the global game jam website  
-<a href="https://globalgamejam.org/2019/games/dwellings" class="externalLinks">here</a>
+<a href="https://globalgamejam.org/2019/games/dwellings" class="externalLinks">here</a>. This includes a download of the source files.
+<br>
 A video displaying the game can be found 
 <a href="https://youtu.be/d0qf5GIekJA" class="externalLinks">here</a>
 </p>
- 
-<script>
-function myFunction(imgs) {
-  var expandImg = document.getElementById("expandedImg");
-  var imgText = document.getElementById("imgtext");
-  expandImg.src = imgs.src;
-  imgText.innerHTML = imgs.alt;
-  expandImg.parentElement.style.display = "block";
-}
-</script>
+  </p>
+</div>
 
-<footer>
-  <p>The image gallery used is from a tutorial on w3schools</p>
-   <a href="https://www.w3schools.com/howto/howto_js_tab_img_gallery.asp" class="externalLinks">The tutorial and code can be found here</a>
- </footer>
-
-</body>
 </html>
+
+<script src="https://cdn.jsdelivr.net/npm/bs-custom-file-input/dist/bs-custom-file-input.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+  integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+  integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
