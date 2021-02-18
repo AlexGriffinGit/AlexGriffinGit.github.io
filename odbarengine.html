@@ -108,10 +108,23 @@
 <div class="jumbotron">
   <h1 id="about" class="display-2">The ODBAR Game Engine</h1>
   <p class="lead">
-    ODBAR
+    The ODBAR Game Engine was developed as part of a group project undertaken in my final year of university. ODBAR is a custom built game engine and was developed in C++.
   </p>
   <p>
-    Description
+    Our task was to create a game engine from the ground up that specialised in the development of a specific game genre. 
+    Our groups genre was the platformer and we focused on accommodating 2D platformers, to accomplish this we developed a tile system
+    which would make up the game levels. These tiles were pre loaded into the engine, with the ability to add more custom tiles if so wished.
+    Once the user was done creating the levels they could be saved to and loaded from a text file as shown in the last image.
+    <br>
+    <br>
+    The ODBAR Engine also supports animations by using a <a href="javascript:;" data-toggle="popover" data-trigger="focus hover"
+    data-content="A spritesheet contains a sequence of images or frames that when rapidly shown in sequence act as a moving image or animation. An introduction can be found <a href='https://gamedevelopment.tutsplus.com/tutorials/an-introduction-to-spritesheet-animation--gamedev-13099' class='externalLinks'>here</a>">spritesheet</a>.
+    <br>
+    <br>
+    The engine has several built in tile types which all achieve different gameplay results, we allowed for expansion of these by having the ability to add in custom tile types.
+    <br>
+    <br>
+    Although the engine by itself looks basic there are a number of features not represented in the UI, such as a full physics system with momentum, sliding and gravity.
   </p>
 </div>
 
@@ -124,3 +137,9 @@
   integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
   integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('[data-toggle="popover"]').popover({html:true});
+    });
+  </script>
